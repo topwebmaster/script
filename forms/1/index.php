@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Документ без названия</title>
+</head>
+
+<body>
+	<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>" id="contactform">
+<div>
+
+<label for="name"><strong>Name:</strong></label>
+<input type="text" size="50" name="contactname" id="contactname" value="" class="required" />
+</div>
+ <div>
+  <label for="email"><strong>Email:</strong></label>
+  <input type="text" size="50" name="email" id="email" value="" class="required email" />
+  </div>
+ <div>
+  <label for="subject"><strong>Subject:</strong></label>
+  <input type="text" size="50" name="subject" id="subject" value="" class="required" />
+  </div>
+ <div>
+  <label for="message"><strong>Message:</strong></label>
+  <textarea rows="5" cols="50" name="message" id="message" class="required"></textarea>
+  </div>
+  <input type="submit" value="Send Message" name="submit" />
+  </form>
+
+	</form>
+</body>
+</html>
